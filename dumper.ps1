@@ -1,37 +1,7 @@
 $ErrorActionPreference = "SilentlyContinue"
 $systemname = "NT.AUT.*\\"
 
-function showAwesomeBanner{
-    write-host "
 
-             .AMMMMMISHAMMA.
-       .AV. :::.:.:.::MA.
-      A' :..        : .:`A
-     A'..              . `A.
-    A' :.    :::::::::  : :`A
-    M  .    :::.:.:.:::  . .M
-    M  :   ::.:.....::.:   .M
-    V : :.::.:........:.:  :V
-   A  A:    ..:...:...:.   A A
-  .V  MA:.....:M.::.::. .:AM.M
- A'  .VMMMMISHAMM:.:AMMMISHAMV: A
-:M .  .`VMISHAMV.:A `VMMMMV .:M:
- V.:.  ..`VMMMV.:AM..`VMV' .: V
-  V.  .:. .....:AMMA. . .:. .V
-   VMM...: ...:.MMMM.: .: MMV
-       `VM: . ..M.:M..:::M'
-         `M::. .:.... .::M
-          M:.  :. .... ..M
-          V:  M:. M. :M .V
-          `V.:M.. M. :M.V'
- ______  ___        __     ____  __    ___                 ___ 
-/_  __/ <  / ____  / /__  |_  / / /_  / _ \ __ __  __ _   / _ \
- / /    / / / __/ /  '_/ _/_ < / __/ / // // // / /  ' \ / ___/
-/_/    /_/  \__/ /_/\_\ /____/ \__/ /____/ \_,_/ /_/_/_//_/    
-                                                    Powershell"
-
-    write-host "        Michael Zhmaylo ( https://github.com/MzHmO )"
-}
 
 function Invoke-AsSystem {
     $winlogonPid = Get-Process -Name "winlogon" | Select-Object -First 1 -ExpandProperty Id
@@ -329,7 +299,7 @@ Function EnumerateLogonSessions()
     }
     }
 function main{
-    showAwesomeBanner
+    
 
     # Initializing DotNet and Add-Type with Structures and LSA Functions
 
